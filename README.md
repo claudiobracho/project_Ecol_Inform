@@ -17,7 +17,7 @@ Generated data and code can be downloaded at XXX
 Data structure
 ---------------------
 The folder "project_Ecol_Inform" includes three folders (code, data_inputs, and renv) and three additional
-objects (project_Ecol_Inform, README, and renv.lock).
+objects (project_Ecol_Inform, README, and renv.lock). Note that renv folder is only available via figshare.
 
 ## 1- code folder
 
