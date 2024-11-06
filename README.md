@@ -17,7 +17,7 @@ Generated data and code can be downloaded at XXX
 Data structure
 ---------------------
 The folder "project_Ecol_Inform" includes three folders (code, data_inputs, and renv) and three additional
-objects (project_Ecol_Inform, README, and renv.lock). Note that renv folder and large data inputs are only available via figshare.
+objects (project_Ecol_Inform, README, and renv.lock). Note that renv folder and large data inputs are only available via figshare at https://figshare.com/s/8d2b568a7374732e30eb (¡LINK PRIVADO TEMPORAL!).
 
 ## 1- code folder
 
@@ -25,7 +25,7 @@ objects (project_Ecol_Inform, README, and renv.lock). Note that renv folder and 
 
 ## 2- data_inputs folder
 
-> This folder includes two subfolders ("AFE" and "SDM prediction", only available via figshare), and four additional objects ("metrics_SDM.csv", "samplingeffort_10km.tif", "samplingeffort_10km.xml", and "spp_keys.csv") necessary to run provided codes.
+> This folder includes two subfolders ("AFE" and "SDM prediction", only available via figshare at https://figshare.com/s/8d2b568a7374732e30eb (¡LINK PRIVADO TEMPORAL!)), and four additional objects ("metrics_SDM.csv", "samplingeffort_10km.tif", "samplingeffort_10km.xml", and "spp_keys.csv") necessary to run provided codes.
 
 ## 3- renv folder
 
