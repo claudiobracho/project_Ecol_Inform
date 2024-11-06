@@ -11,8 +11,6 @@ Brief description
 ---------------------
 Here we provide easy and open access both to our code and inputs, which reproduce most relevant results detailed in the main text of our article. Importantly, this includes the script to obtain OUC and CI metrics, which allows to implement them in further works.
 
-Generated data and code can be downloaded at XXX
-
 
 Data structure
 ---------------------
