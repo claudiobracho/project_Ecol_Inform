@@ -30,7 +30,7 @@ The folder "project_Ecol_Inform" includes three folders (code, data_inputs, and 
 
 ## 2- data_inputs folder
 
-> This folder includes two subfolders ("AFE" and "SDM prediction", only available via figshare at <https://figshare.com/s/8d2b568a7374732e30eb> (¡LINK PRIVADO TEMPORAL!)), and four additional objects ("metrics_SDM.csv", "samplingeffort_10km.tif", "samplingeffort_10km.xml", and "spp_keys.csv") necessary to run provided codes.
+> This folder includes four subfolders ("environmental variables", "cleaned records", "AFE" and "SDM prediction", only available via figshare at <https://figshare.com/s/8d2b568a7374732e30eb> (¡LINK PRIVADO TEMPORAL!)), and four additional objects ("metrics_SDM.csv", "samplingeffort_10km.tif", "samplingeffort_10km.xml", and "spp_keys.csv") necessary to run provided codes.
 
 ## 3- renv folder
 
