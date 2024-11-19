@@ -10,7 +10,7 @@ sdmoutput <- ""
 setwd(sdmoutput)
 
 # Species
-plant_keys <- read.csv("../data_outputs/plant_keys.csv")
+plant_keys <- read.csv("../data_inputs/plant_keys.csv")
 # plant_keys <- read.csv("C:/Users/claud/Desktop/UCADOCTORADO/REPOSITORIOS/chapter_3/data_outputs/plant_keys.csv")
 plant_keys <- plant_keys[,"plant_sp"]
 

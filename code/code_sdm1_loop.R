@@ -5,7 +5,7 @@ library(dismo)
 library(sf)
 library(sp)
 library(rgeos) 
-library(biomod2) # For this study we used version 3.5.1
+library(biomod2) # For this study we used version 4.1-2
 library(ggplot2)
 library(RColorBrewer) 
 library(dplyr); library(tidyr)
@@ -36,16 +36,16 @@ species_all <- plant_keys[,"plant_sp"]
 ### Opciones de calibracion ###
 ###################################
 seed <- 8739465
-set.seed(seed)   # para tener siempre los mismos resultados
+set.seed(seed)   
 cpu=2
 maxent_file <- "C:/Users/USUARIO/Documents/R/maxent/maxent.jar"
 pa.nb.rep = 5
 NbRunEval = 10
 
-### GAM: cambiar k=4 para evitar modelos demasiado complejos
+### GAM: 
 myBiomodOption <- BIOMOD_ModelingOptions(GAM = list(k = 4),
                                          MAXENT.Phillips = list(path_to_maxent.jar=maxent_file))
-# revisar las opciones de RF segun Hao 2020 etal 
+
 
 print(myBiomodOption)
 
@@ -112,7 +112,7 @@ for(i in ini:fin) {
     
     #Save data format
     if(file.exists(myRespName)==F){dir.create(myRespName)}
-    pdf(file = paste(myRespName,"/",myRespName,"_",IDmodel,"_Data.pdf",sep="") ) # guardamos los output en un pdf  
+    pdf(file = paste(myRespName,"/",myRespName,"_",IDmodel,"_Data.pdf",sep="") )  
         plot(myBiomodData)
     dev.off()
     next
