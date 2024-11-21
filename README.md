@@ -12,7 +12,7 @@ Here we provide easy and open access both to our code and inputs, which reproduc
 
 ## Data structure
 
-The folder "project_Ecol_Inform" includes three folders (code, data_inputs, and renv) and three additional objects (project_Ecol_Inform, README, and renv.lock). Note that renv folder and large data inputs are only available via figshare at <https://figshare.com/s/8d2b568a7374732e30eb> (¡LINK PRIVADO TEMPORAL!).
+The folder "project_Ecol_Inform" includes three folders (code, data_inputs, and renv) and three additional objects (project_Ecol_Inform, README, and renv.lock). Note that renv folder and large data inputs are only available via figshare at <https://doi.org/10.6084/m9.figshare.27623874> .
 
 ## 1- code folder
 
@@ -24,13 +24,13 @@ The folder "project_Ecol_Inform" includes three folders (code, data_inputs, and 
 >
 > -   "code_GLMMs.R" runs all generalized mixed models reported in our main text.
 >
-> -   "code_sdm1_loop.R", uses biomod2 package to generate SDM per species. Requires occurrence and environmental data stored in figshare: <https://figshare.com/s/8d2b568a7374732e30eb> (¡LINK PRIVADO TEMPORAL!).
+> -   "code_sdm1_loop.R", uses biomod2 package to generate SDM per species. Requires occurrence and environmental data available via figshare at <https://doi.org/10.6084/m9.figshare.27623874>.
 >
 > -   "code_sdm2_metrics.R integrates the metrics results of th SDM in a single file for all species
 
 ## 2- data_inputs folder
 
-> This folder includes four subfolders ("environmental variables", "cleaned records", "AFE" and "SDM prediction", only available via figshare at <https://figshare.com/s/8d2b568a7374732e30eb> (¡LINK PRIVADO TEMPORAL!)), and four additional objects ("metrics_SDM.csv", "samplingeffort_10km.tif", "samplingeffort_10km.xml", and "spp_keys.csv") necessary to run provided codes.
+> This folder includes four subfolders ("environmental variables", "cleaned records", "AFE" and "SDM prediction", only available via figshare at <https://doi.org/10.6084/m9.figshare.27623874>), and four additional objects ("metrics_SDM.csv", "samplingeffort_10km.tif", "samplingeffort_10km.xml", and "spp_keys.csv") necessary to run provided codes.
 
 ## 3- renv folder
 
