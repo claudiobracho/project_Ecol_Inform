@@ -11,13 +11,12 @@ setwd(sdmoutput)
 
 # Species
 plant_keys <- read.csv("../data_inputs/plant_keys.csv")
-# plant_keys <- read.csv("C:/Users/claud/Desktop/UCADOCTORADO/REPOSITORIOS/chapter_3/data_outputs/plant_keys.csv")
 plant_keys <- plant_keys[,"plant_sp"]
 
-myRespName <- stringr::str_replace_all(plant_keys, " ", "") #eliminamos espacio para evitar problemas al guardar archvos
+myRespName <- stringr::str_replace_all(plant_keys, " ", "")
 myRespName <- stringr::str_sub(myRespName, start=1,end=12) 
 
-comb <- 12 # numero de combinaciones probadas
+comb <- 12 # N of treatment combinations
 
 runROC <- NA
 # Prepare our ROC evaluation
@@ -105,12 +104,12 @@ for(i in 1:length(plant_keys)) {
       
       for (k in seleccion){
         run <- var_imp[k,3] %>%
-          str_sub(2,100) %>% #eliminamos espacio inicial 
+          str_sub(2,100) %>% 
           str_split_fixed(pattern="_",n=4)
         ini =k+2
         fin =k+13
         imp <- var_imp[ini:fin,1] 
-        imp <- gsub("\\s+"," ",imp) # eliminamos espacios extra)
+        imp <- gsub("\\s+"," ",imp) 
         imp <- as.data.frame(str_split_fixed(imp, pattern=" ",n=4))
         imp <- cbind(imp,run) %>%
           pivot_longer(cols =c("V2","V3","V4"),names_to="rand",values_to ="imp")
