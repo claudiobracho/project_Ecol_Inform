@@ -21,7 +21,7 @@ The folder "project_Ecol_Inform" includes three folders (code, data_inputs, and 
 > -   "code_packages" permits (via the renv package) to refresh or load all necessary packages. Thus, it should be run first.
 >
 > -   "code_spatial_metrics.R" calculates OUC and CI metrics given SDM predictions (requires spatial outputs).
-> -   
+>   
 > -   "code_spatial_comparison.R" calculates the mean Pearson correlation, the Schoener’s D, the Hellinger’s I, and the Spearman rank correlation between SDM predictions (requires spatial outputs).
 >
 > -   "code_GLMMs.R" runs all generalized mixed models reported in our main text.
