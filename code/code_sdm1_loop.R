@@ -30,10 +30,9 @@ crs(Exp) <- CRS("+proj=aea +lat_1=43 +lat_2=62 +lat_0=30 +lon_0=10 +x_0=0 +y_0=0
 
 # Species
 plant_keys <- read.csv("../data_outputs/plant_keys.csv")
-# plant_keys <- read.csv("C:/Users/claud/Desktop/UCADOCTORADO/REPOSITORIOS/chapter_3/data_outputs/plant_keys.csv")
 species_all <- plant_keys[,"plant_sp"]
 
-### Opciones de calibracion ###
+### Calibration options ###
 ###################################
 seed <- 8739465
 set.seed(seed)   
@@ -55,7 +54,7 @@ setwd(sdmoutput)
 for(i in ini:fin) {
  
   # Get species occurrence data
-   myRespName <- species_all[i]
+  myRespName <- species_all[i]
   cat("\n######## \n Ensemble modelling for", myRespName, "\n Time:", date())  
   DataSpecies <- read.csv(paste("../data_outputs/GBIF_coords_corrected_spatial_bias/sp_correct_bias",myRespName,".csv",sep = ""))
   myRespName <- stringr::str_replace_all(myRespName, " ", "") 
@@ -119,7 +118,7 @@ for(i in ini:fin) {
     }
   
   
-  ### Extraemos objeto de la carpeta
+  ### Extract object from the folder
   # load(paste(sdmoutput,myRespName,"/",myRespName,".",IDmodel,".models.out",sep=""))
   # myBiomodModelOut <- get(paste(myRespName,".",IDmodel,".models.out",sep=""))
   # rm(list=ls(pattern=paste(myRespName,".",IDmodel,".models.out",sep="")))
@@ -154,7 +153,7 @@ for(i in ini:fin) {
   
 
   
-   ### Extraemos objeto de la carpeta
+   ### Extract object from the folder
   # load(paste(sdmoutput,myRespName,"/",myRespName,".",IDmodel,".models.out",sep=""))
   # myBiomodModelOut <- get(paste(myRespName,".",IDmodel,".models.out",sep=""))
   # rm(list=ls(pattern=paste(myRespName,".",IDmodel,".models.out",sep="")))
@@ -212,7 +211,7 @@ for(i in ini:fin) {
     nb.cpu=cpu)
 
   
-  ### Extraemos objeto de la carpeta
+  ### Extract object from the folder
   # load(paste(sdmoutput ,myRespName,"/",myRespName,".",IDmodel,".ensemble.models.out",sep=""))
   # myBiomodEM <- get(paste(myRespName,".",IDmodel,".ensemble.models.out",sep=""))
   # rm(list=ls(pattern=paste(myRespName,".",IDmodel,".ensemble.models.out",sep="")))
