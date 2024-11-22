@@ -8,7 +8,7 @@ Citation: Bracho-Estévanez, C. A., Arenas-Castro, S., González-Varo, J. P., & 
 
 ## Brief description
 
-Here we provide easy and open access both to our code and inputs, which reproduce most relevant results detailed in the main text of our article. Importantly, this includes the script to obtain OUC and CI metrics, which allows to implement them in further works.
+Here we provide easy and open access both to our code and inputs, which reproduce most relevant results detailed in the main text of our article. Importantly, this includes the script to obtain OUC and COI metrics, which allows to implement them in further works.
 
 ## Data structure
 
@@ -16,11 +16,13 @@ The folder "project_Ecol_Inform" includes three folders (code, data_inputs, and 
 
 ## 1- code folder
 
-> This folder includes four objects ("code_packages.R", "code_spatial_metrics.R", "code_spatial_comparison.R", "code_GLMMs.R", "code_sdm1_loop.R", "code_sdm2_metrics.R").
+> This folder includes six objects ("code_packages.R", "code_spatial_metrics.R", "code_spatial_comparison.R", "code_GLMMs.R", "code_sdm1_loop.R", "code_sdm2_metrics.R").
 >
 > -   "code_packages" permits (via the renv package) to refresh or load all necessary packages. Thus, it should be run first.
 >
-> -   "code_spatial_metrics.R" calculates OUC and CI metrics given SDM predictions (requires spatial outputs). "code_spatial_comparison.R" calculates the mean Pearson correlation, the Schoener’s D, the Hellinger’s I, and the Spearman rank correlation between SDM predictions (requires spatial outputs).
+> -   "code_spatial_metrics.R" calculates OUC and CI metrics given SDM predictions (requires spatial outputs).
+> -   
+> -   "code_spatial_comparison.R" calculates the mean Pearson correlation, the Schoener’s D, the Hellinger’s I, and the Spearman rank correlation between SDM predictions (requires spatial outputs).
 >
 > -   "code_GLMMs.R" runs all generalized mixed models reported in our main text.
 >
